@@ -183,21 +183,33 @@ let products = [
 
 // 11. Narxi eng past bo'lgan product topilsin. (sort)
 
-const sortByPrice = products.sort((a, b) => {
-  return a.price - b.price;
-});
+// const sortByPrice = products.sort((a, b) => {
+//   return a.price - b.price;
+// });
 
-console.log(sortByPrice);
-console.log(sortByPrice.at());
+// console.log(sortByPrice);
+// console.log(sortByPrice.at());
 
 /////////////////////////////////////////
 
 // 13. Faqatgina products nomlaridangina iborat bo'lgan massiv qaytaring. (map)
 
-// const mapByName = products.map((product) => {
-//   return (product.name = "Products");
-// });
-
-// console.log(mapByName);
+// console.log(products.map((product) => product.name));
 
 ///////////////////////////////////////////
+
+// 14. Id si 5 bo'lgan elementni nomini qaytaruvchi dastur yozing. (find)
+
+// console.log(products.find((product) => product.id == 5).name);
+
+///////////////////////////////////////////
+
+// 15. Id si 4 bo'lgan productni o'chiruvchi dastur yozing. (filter)
+
+// const filteredProducts = products.filter((product) => {
+//   return product.id !== 4;
+// });
+
+// console.log(filteredProducts)
+
+//////////////////////////////////////////
