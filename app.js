@@ -183,12 +183,12 @@ let products = [
 
 // 11. Narxi eng past bo'lgan product topilsin. (sort)
 
-// const sortByPrice = products.sort((a, b) => {
-//   return a.price - b.price;
-// });
+const sortByPrice = products.sort((a, b) => {
+  return a.price - b.price;
+});
 
-// console.log(sortByPrice);
-// console.log(sortByPrice[0]);
+console.log(sortByPrice);
+console.log(sortByPrice.at());
 
 /////////////////////////////////////////
 
