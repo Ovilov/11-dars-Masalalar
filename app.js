@@ -213,3 +213,26 @@ let products = [
 // console.log(filteredProducts)
 
 //////////////////////////////////////////
+
+// // 16. Berilgan satrni faqatgina harflardan iborat ekanligiga tekshiring (split, every)
+
+// const text1 = "shfbwiqeijdcirgnvni6ewifmc s".split("").every((letter) => {
+//   return !Number(letter);
+// });
+
+// console.log(text1);
+
+///////////////////////////////////////
+
+// 17. Massiv truthy va falsy elementlardan tuzilgan. O’sha massivdagi truthy va falsy elementlarni alohida massivlarga ajratib object qilib qaytaruvchi getTruthyFalsy funksiya tuzing. (filter)
+
+const values = [false, 1, 10, "", null, "abdulaziz", 1.13, 0];
+
+function getTruthyFalsy(val) {
+  return {
+    truthy: val.filter((item) => item),
+    falsy: val.filter((item) => !item),
+  };
+}
+
+console.log(getTruthyFalsy(values));
